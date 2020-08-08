@@ -1,0 +1,11 @@
+Hello Elasticsearch with Django
+<form method="GET">
+    <input id ='q' name='q' type="text" placeholder="search ..." />
+</form>
+
+{% for item in titre_wiki %}
+    {{item.id}}
+    {{item.title}}
+    {{item.slug}}
+    <br>
+{% endfor %}

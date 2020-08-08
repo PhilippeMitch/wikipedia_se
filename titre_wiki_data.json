@@ -1,0 +1,248 @@
+{
+    "titre_wiki":[
+        {
+            "id": 1,
+            "title": "Apprentissage supervisé",
+            "slug": "apprentissage surpervise"
+        },
+        {
+            "id": 2,
+            "title": "Apprentissage non supervisé",
+            "slug": "apprentissage non surpervise"
+        },
+        {
+            "id": 3,
+            "title": "Apprentissage semi-supervisé",
+            "slug": "apprentissage semi-surpervise"
+        },
+        {
+            "id": 4,
+            "title": "Apprentissage par renforcement",
+            "slug": "apprentissage renforcement"
+        },
+        {
+            "id": 5,
+            "title": "Apprentissage par transfert",
+            "slug": "apprentissage par transfert"
+        },
+        {
+            "id": 6,
+            "title": "Les gaz à effet de serre",
+            "slug": "gaz a effet de serre"
+        },      
+        {
+        "id": 7,
+            "title": "L'Étranger",
+            "slug": "etranger_"
+        },
+        {
+            "id": 8,
+            "title": "À la recherche du temps perdu",
+            "slug": "recherche temps perdu"
+        },
+        {
+            "id": 9,
+            "title": "Le Procès",
+            "slug": "proces_"
+        },
+        {
+            "id": 10,
+            "title": "Le Petit Prince",
+            "slug": "petit prince"
+        },
+        {
+            "id": 11,
+            "title": "La Condition humaine",
+            "slug": "condition humaine"
+        },
+        {
+            "id": 12,
+            "title": "Voyage au bout de la nuit",
+            "slug": "voyage_bout_de_la_nuit"
+        },
+        {
+            "id": 13,
+            "title": "Les Raisins de la colère",
+            "slug": "raisins de la colere"
+        },
+        {
+            "id": 14,
+            "title": "Pour qui sonne le glas",
+            "slug": "qui_sonne_le_glas"
+        },
+        {
+            "id": 15,
+            "title": "Le Grand Meaulnes",
+            "slug": "grand_meaulnes"
+        },
+        {
+            "id": 16,
+            "title": "L'Écume des jours",
+            "slug": "ecume_des_jours"
+        },
+        {
+            "id": 17,
+            "title": "En attendant Godot",
+            "slug": "attendant godot"
+        },
+        {
+            "id": 18,
+            "title": "L'Être et le Néant",
+            "slug": "etre et le neant"
+        },
+        {
+            "id": 19,
+            "title": "Le Nom de la rose",
+            "slug": "Le_nom_de_la_rose"
+        },
+        {
+            "id": 20,
+            "title": "L'Archipel du Goulag",
+            "slug": "archipel_du_Goulag"
+        },
+        {
+            "id": 21,
+            "title": "Paroles",
+            "slug": "paroles_"
+        },
+        {
+            "id": 22,
+            "title": "Alcools",
+            "slug": "alcools"
+        },
+        {
+            "id": 23,
+            "title": "Le Lotus bleu",
+            "slug": "lotus_bleu"
+        },
+        {
+            "id": 24,
+            "title": "Le Journal d'Anne Frank",
+            "slug": "journal_anne_frank"
+        },
+        {
+            "id": 25,
+            "title": "Tristes Tropiques",
+            "slug": "tristes tropiques"
+        },
+        {
+            "id": 26,
+            "title": "Le Meilleur des mondes",
+            "slug": "meilleur des modes"
+        },
+        {
+            "id": 27,
+            "title": "Astérix le Gaulois",
+            "slug": "aterix le gaulois"
+        },
+        {
+            "id": 28,
+            "title": "La Cantatrice chauve",
+            "slug": "cantatrice chauve"
+        },
+        {
+            "id": 29,
+            "title": " machines à vecteur de support",
+            "slug": "machine a vecteur"
+        },
+        {
+            "id": 30,
+            "title": "Le boosting",
+            "slug": "boosting"
+        },
+        {
+            "id": 31,
+            "title": "Les réseaux de neurones",
+            "slug": "reseaux_de_neurones"
+        },
+        {
+            "id": 32,
+            "title": "La méthode des k plus proches voisins",
+            "slug": "methode des k plus proches voisins"
+        },
+        {
+            "id": 33,
+            "title": "Les arbres de décision",
+            "slug": "decision tree"
+        },
+        {
+            "id": 34,
+            "title": "Les méthodes statistiques",
+            "slug": "methode_statistique"
+        },
+        {
+            "id": 35,
+            "title": "Le modèle de mixture gaussienne",
+            "slug": "modèle_de_mixture_gaussienne"
+        },
+        {
+            "id": 36,
+            "title": "la régression logistique",
+            "slug": "regression-logistique"
+        },
+        {
+            "id": 37,
+            "title": "l'analyse discriminante linéaire",
+            "slug": "analyse discriminante linéaire"
+        },
+        {
+            "id": 38,
+            "title": "les algorithmes génétiques",
+            "slug": "algorithmes génétiques"
+        },
+        {
+            "id": 39,
+            "title": "La programmation génétique",
+            "slug": "programmation-genetique"
+        },
+        {
+            "id": 40,
+            "title": "la recherche d'image par le contenu",
+            "slug": "recherche image par contenu"
+        },
+        {
+            "id": 41,
+            "title": "reconnaissance de l'écriture manuscrite",
+            "slug": "reconnaissance écriture manuscrite"
+        },
+        {
+            "id": 42,
+            "title": "analyse et indexation d'images et de vidéo",
+            "slug": "analyse indexation images vidéo"
+        },
+        {
+            "id": 43,
+            "title": "détection de données manquantes",
+            "slug": "detection donnee manquantes"
+        },
+        {
+            "id": 44,
+            "title": "La détection de fraudes",
+            "slug": "détection fraudes"
+        },
+        {
+            "id": 45,
+            "title": "Analyse des marchés financiers",
+            "slug": "analyse des marches financiers"
+        },
+        {
+            "id": 46,
+            "title": "Regroupement hiérarchique",
+            "slug": "regroupement hierarchique"
+        },
+        {
+            "id": 47,
+            "title": "Réduction de la dimensionnalité",
+            "slug": "réduction dimensionnalité"
+        },
+        {
+            "id": 48,
+            "title": "Extraction de connaissances",
+            "slug": "extraction connaissances"
+        },
+        {
+            "id": 49,
+            "title": "Partitionnement de données",
+            "slug": "partitionnement données"
+        }
+]}
