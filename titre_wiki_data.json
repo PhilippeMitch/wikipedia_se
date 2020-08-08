@@ -2,33 +2,33 @@
     "titre_wiki":[
         {
             "id": 1,
-            "title": "Apprentissage supervisé",
-            "slug": "apprentissage surpervise"
+            "title": "Apprentissage_supervisé",
+            "slug": "apprentissage_surpervise"
         },
         {
             "id": 2,
             "title": "Apprentissage non supervisé",
-            "slug": "apprentissage non surpervise"
+            "slug": "apprentissage_non_surpervise"
         },
         {
             "id": 3,
             "title": "Apprentissage semi-supervisé",
-            "slug": "apprentissage semi-surpervise"
+            "slug": "apprentissage_semi-surpervise"
         },
         {
             "id": 4,
             "title": "Apprentissage par renforcement",
-            "slug": "apprentissage renforcement"
+            "slug": "apprentissage_renforcement"
         },
         {
             "id": 5,
             "title": "Apprentissage par transfert",
-            "slug": "apprentissage par transfert"
+            "slug": "apprentissage_par_transfert"
         },
         {
             "id": 6,
             "title": "Les gaz à effet de serre",
-            "slug": "gaz a effet de serre"
+            "slug": "gaz_a_effet_de_serre"
         },      
         {
         "id": 7,
@@ -38,7 +38,7 @@
         {
             "id": 8,
             "title": "À la recherche du temps perdu",
-            "slug": "recherche temps perdu"
+            "slug": "recherche_temps_perdu"
         },
         {
             "id": 9,
@@ -48,12 +48,12 @@
         {
             "id": 10,
             "title": "Le Petit Prince",
-            "slug": "petit prince"
+            "slug": "petit_prince"
         },
         {
             "id": 11,
             "title": "La Condition humaine",
-            "slug": "condition humaine"
+            "slug": "condition_humaine"
         },
         {
             "id": 12,
@@ -63,7 +63,7 @@
         {
             "id": 13,
             "title": "Les Raisins de la colère",
-            "slug": "raisins de la colere"
+            "slug": "raisins_de_la_colere"
         },
         {
             "id": 14,
@@ -83,12 +83,12 @@
         {
             "id": 17,
             "title": "En attendant Godot",
-            "slug": "attendant godot"
+            "slug": "attendant_godot"
         },
         {
             "id": 18,
             "title": "L'Être et le Néant",
-            "slug": "etre et le neant"
+            "slug": "etre_et_le_neant"
         },
         {
             "id": 19,
@@ -123,27 +123,27 @@
         {
             "id": 25,
             "title": "Tristes Tropiques",
-            "slug": "tristes tropiques"
+            "slug": "tristes_tropiques"
         },
         {
             "id": 26,
             "title": "Le Meilleur des mondes",
-            "slug": "meilleur des modes"
+            "slug": "meilleur_des_modes"
         },
         {
             "id": 27,
             "title": "Astérix le Gaulois",
-            "slug": "aterix le gaulois"
+            "slug": "aterix_le_gaulois"
         },
         {
             "id": 28,
             "title": "La Cantatrice chauve",
-            "slug": "cantatrice chauve"
+            "slug": "cantatrice_chauve"
         },
         {
             "id": 29,
             "title": " machines à vecteur de support",
-            "slug": "machine a vecteur"
+            "slug": "machine_vecteur"
         },
         {
             "id": 30,
@@ -158,12 +158,12 @@
         {
             "id": 32,
             "title": "La méthode des k plus proches voisins",
-            "slug": "methode des k plus proches voisins"
+            "slug": "methode_des_k_plus_proches_voisins"
         },
         {
             "id": 33,
             "title": "Les arbres de décision",
-            "slug": "decision tree"
+            "slug": "decision_tree"
         },
         {
             "id": 34,
@@ -178,71 +178,71 @@
         {
             "id": 36,
             "title": "la régression logistique",
-            "slug": "regression-logistique"
+            "slug": "regression_logistique"
         },
         {
             "id": 37,
             "title": "l'analyse discriminante linéaire",
-            "slug": "analyse discriminante linéaire"
+            "slug": "analyse_discriminante_lineaire"
         },
         {
             "id": 38,
             "title": "les algorithmes génétiques",
-            "slug": "algorithmes génétiques"
+            "slug": "algorithmes_genetiques"
         },
         {
             "id": 39,
             "title": "La programmation génétique",
-            "slug": "programmation-genetique"
+            "slug": "programmation_genetique"
         },
         {
             "id": 40,
             "title": "la recherche d'image par le contenu",
-            "slug": "recherche image par contenu"
+            "slug": "recherche_image_par_contenu"
         },
         {
             "id": 41,
             "title": "reconnaissance de l'écriture manuscrite",
-            "slug": "reconnaissance écriture manuscrite"
+            "slug": "reconnaissance_ecriture_manuscrite"
         },
         {
             "id": 42,
             "title": "analyse et indexation d'images et de vidéo",
-            "slug": "analyse indexation images vidéo"
+            "slug": "analyse_indexation_images_video"
         },
         {
             "id": 43,
             "title": "détection de données manquantes",
-            "slug": "detection donnee manquantes"
+            "slug": "detection_donnee_manquantes"
         },
         {
             "id": 44,
             "title": "La détection de fraudes",
-            "slug": "détection fraudes"
+            "slug": "detection_fraudes"
         },
         {
             "id": 45,
             "title": "Analyse des marchés financiers",
-            "slug": "analyse des marches financiers"
+            "slug": "analyse_des_marches_financiers"
         },
         {
             "id": 46,
             "title": "Regroupement hiérarchique",
-            "slug": "regroupement hierarchique"
+            "slug": "regroupement_hierarchique"
         },
         {
             "id": 47,
             "title": "Réduction de la dimensionnalité",
-            "slug": "réduction dimensionnalité"
+            "slug": "réduction dimensionnalite"
         },
         {
             "id": 48,
             "title": "Extraction de connaissances",
-            "slug": "extraction connaissances"
+            "slug": "extraction_connaissances"
         },
         {
             "id": 49,
             "title": "Partitionnement de données",
-            "slug": "partitionnement données"
+            "slug": "partitionnement_donnees"
         }
 ]}

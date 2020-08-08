@@ -18,3 +18,4 @@ class WikiTitleDocument(Document):
         fields = [
             'id', 'title', 'slug'
         ]
+

@@ -12,3 +12,5 @@ def search(request):
         print('serach not found')
 
     return render(request, 'search/search.html', {'titre_wiki': titre_wiki} )
+
+
