@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enregistrement des articles</title>
+    </head>
+    <body>
+        {% if liste_titre %}
+        <table>
+            <tbody>
+                {% for line in liste_titre  %}
+                <tr> 
+                    <td>{{ line.title }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        {% endif %}
+    </body>
+</html>

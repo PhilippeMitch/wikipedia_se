@@ -13,12 +13,15 @@ class ArticleWikiRouter:
     def allow_relation(self, obj1, obj2, **hints):
         """
         Relations between objects are allowed if both objects are
-        in the db_article_wiki database
+        in the primary/replica pool.
         """
-        db_name = 'db_article_wiki'
-        if obj1._state.db == db_name and obj2._state.db == db_name:
+        # db_name = 'db_article_wiki'
+        db_list = ('db_article_wiki', 'db_titre_wiki')
+        if obj1._state.db in db_list and obj2._state.db in db_list:
             return True
-        return False
+        return None
+
+
 
     def allow_migrate(self, db, app_label, model_name=None, **hints):
         """

@@ -40,7 +40,6 @@ class TitreWikiRouter:
         if obj1._meta.app_label == app_label_name and \
         obj2._meta.app_label == app_label_name:
             return True
-        #If both models don't have app_label = 'titre_wiki' pass None to proceed
         #to next router
         elif app_label_name not in [obj1._meta.app_label, obj2._meta.app_label]:
             return None

@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'article_wiki',
     'search',
     'django_elasticsearch_dsl',
+    'background_task',
+    'django_celery_results'
 
 ]
 
@@ -139,3 +141,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# CELERY STUFF
+# BROKER_URL = 'amqp://'
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+# CELERY_RESULT_BACKEND = 'django-db'
+# CELERY_ACCEPT_CONTENT = ['json']
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'

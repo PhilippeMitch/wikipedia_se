@@ -1,6 +1,12 @@
 from django.db import models
+
+from background_task.models import Task, CompletedTask
+from django.utils import timezone
+
 from titre_wiki.models import TitreWiki
 from wikipedia_se.crossdb import SpanningForeignKey
+
+
 
 # Create your models here.
 class ArticleWiki(models.Model):
