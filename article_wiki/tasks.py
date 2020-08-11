@@ -2,6 +2,7 @@ from threading import Timer
 from titre_wiki.models import TitreWiki
 from .models import ArticleWiki
 import wikipedia
+# from background_task import background
 
 class UpdateArticle(object):
 
@@ -42,6 +43,13 @@ class UpdateArticle(object):
         if self.iteration_count >= 100:
             timer.cancel()
             
+
+# @background(schedule=60)
+# def notify_user():
+#     for titre_wiki in TitreWiki().objects.all():
+#         titre_wiki_ = TitreWiki.objects.filter(title=titre_wiki_)
+#         if not titre_wiki:
+#             continue
 
 
 # @app.task
