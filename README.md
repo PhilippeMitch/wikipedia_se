@@ -12,7 +12,7 @@ La base de donnée db_titre_wiki contient initialement les titres de wikipedia f
 La base de donnée db_article_wiki contient les articles dont leurs titres sont dans la base de donnée db_titre_wiki
 
 #### La configuration des bases de données pour les deux applications titre_wiki et article_wiki dans le fichier settings.py
-```
+```python
  DATABASES = {
     "default": {},
     'db_titre_wiki': {
