@@ -24,3 +24,12 @@ La base de donnée db_article_wiki contient les articles dont leurs titres sont 
         'NAME': BASE_DIR / 'db_article_wiki.sqlite3',
     }   
 }
+```
+
+Après avoir configuré les deux bases de données, exécutez les migrations
+
+```python manage.py makemigrations```
+
+```python manage.py migrate --database=db_titre_wiki```
+
+```python manage.py migrate --database=db_article_wiki```
