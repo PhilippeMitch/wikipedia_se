@@ -33,3 +33,12 @@ Après avoir configuré les deux bases de données, exécutez les migrations
 ```python manage.py migrate --database=db_titre_wiki```
 
 ```python manage.py migrate --database=db_article_wiki```
+
+#### Configuration elasticsearch dans le fichier settings.py
+
+```python
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
