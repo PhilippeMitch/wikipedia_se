@@ -5,15 +5,13 @@ from django.db.utils import ConnectionHandler, ConnectionRouter
 
 connections = ConnectionHandler()
 router = ConnectionRouter()
-# https://stackoverflow.com/questions/23268895/cross-database-foreign-key-error
-# https://gist.github.com/gcko/de1383080e9f8fb7d208
 
 class SpanningForeignKey(models.ForeignKey):
 
     def validate(self, value, model_instance):
         if self.rel.parent_link:
             return
-        # Call the grandparent rather than the parent to skip validation
+        # Appelez le grand-parent plutôt que le parent pour ignorer la validation
         super(models.ForeignKey, self).validate(value, model_instance)
         if value is None:
             return
