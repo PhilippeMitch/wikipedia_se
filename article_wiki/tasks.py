@@ -10,7 +10,7 @@ class UpdateArticle(object):
 
     def _init_(self):
         self.iteration_count = 0
-        self.heartbeat = 1    
+        self.heartbeat = 60    
 
     @staticmethod
     def add_article(id):
