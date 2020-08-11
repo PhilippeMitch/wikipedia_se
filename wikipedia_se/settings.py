@@ -87,7 +87,6 @@ WSGI_APPLICATION = 'wikipedia_se.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# ImportError: Module "article_wiki" does not define a "AuthRouter" attribute/class
 DATABASE_ROUTERS = [ 'titre_wiki.routers.TitreWikiRouter', 'article_wiki.routers.ArticleWikiRouter']
 
 DATABASES = {

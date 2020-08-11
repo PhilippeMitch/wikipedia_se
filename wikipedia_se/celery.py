@@ -7,7 +7,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wikipedia_se.settings')
 app = Celery('wikipedia_se')
 app.config_from_object('django.conf:settings')
  
-# Load task modules from all registered Django app configs.
+# Charger des modules de tâches à partir de toutes les configurations d'applications Django enregistrées.
 app.autodiscover_tasks()
  
 app.conf.beat_schedule = {

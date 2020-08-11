@@ -19,3 +19,19 @@ class WikiTitleDocument(Document):
             'id', 'title', 'slug'
         ]
 
+
+@registry.register_document
+class ArticleWikiDocument(Document):
+    class Index:
+        name = 'article_wiki'
+        settings = {
+            'number_of_shards': 1,
+            'number_of_replicas': 0
+        }
+
+    class Django:
+        model = ArticleWiki
+
+        fields = [
+            'id', 'content'
+        ]

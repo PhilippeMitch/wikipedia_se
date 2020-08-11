@@ -15,9 +15,13 @@ class UpdateArticle(object):
     def add_article(id):
         self.titre_article = TitreWiki.objects.get(pk=id)
         try:
-            resume_article = wikipedia.summary(titre_article, sentences=4)
-            article_ = ArticleWiki(id=id, content=resume_article, titre_wiki_id=id)
-            article_.save(using='db_article_wiki')
+            resume_article = wikipedia.summary(self.titre_article, sentences=4)
+            article_ = ArticleWiki()
+            article_._state.adding = False
+            article_._state.db = 'db_article_wiki'
+            article_.content = resume_article
+            article_.titre_wiki = id
+            article_.save()
         except wikipedia.exceptions.DisambiguationError as e:
             for options in e.options:
                 error += options.decode("utf-8","ignore")+'\n'
@@ -42,17 +46,10 @@ class UpdateArticle(object):
 
 # @app.task
 # def add_aticle_to_db():
-#     for user in get_user_model().objects.all():
-#         posts = Post.objects.filter(author=user)
-#         if not posts:
+#     for titre_wiki in TitreWiki().objects.all():
+#         titre_wiki_ = TitreWiki.objects.filter(title=titre_wiki_)
+#         if not titre_wiki:
 #             continue
  
 #         template = Template(REPORT_TEMPLATE)
  
-#         send_mail(
-#             'Your QuickPublisher Activity',
-#             template.render(context=Context({'posts': posts})),
-#             'from@quickpublisher.dev',
-#             [user.email],
-#             fail_silently=False,
-#         )

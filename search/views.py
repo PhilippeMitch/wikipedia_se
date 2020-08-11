@@ -12,10 +12,10 @@ def search(request):
     q = request.GET.get('q')
     if q:
         titre_wiki = WikiTitleDocument.search().query('match', title=q)
-        print('Search found')
+        print('Recherche trouvée')
     else:
         titre_wiki = ''
-        print('serach not found')
+        print('Recherche non trouvée')
 
     return render(request, 'search/search.html', {'titre_wiki': titre_wiki} )
 
