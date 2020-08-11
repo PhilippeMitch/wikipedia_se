@@ -1,22 +1,19 @@
 from django.conf import settings
 
 """
-We want a router that sends all the apps that don't have an
-app_label='titre_wiki' to the db_titre_wiki database
+Nous voulons un routeur qui envoie toutes les applications qui n'ont pas
+app_label = 'titre_wiki' à la base de données db_titre_wiki
 """
 
 class TitreWikiRouter:
     """
-    A router to control all operations on models in the
-    titre_wiki application
+    Un routeur pour contrôler toutes les opérations sur les modèles dans le
+    application titre_wiki
     """
 
     def db_for_read(self, model, **hints):
         """
-        Attempts to read titre_wiki models go to db_titre_wiki
-        NOTE: model._meta.app_label is the name of the respective app
-        so it might be titre_wiki or posts or auth or contenttypes or w/e if it's 
-        django default or 3rd party app
+        Les tentatives de lecture des modèles titre_wiki vont à db_titre_wiki
         """
         if model._meta.app_label == 'titre_wiki':
             return 'db_titre_wiki'
@@ -24,7 +21,7 @@ class TitreWikiRouter:
 
     def db_for_write(self, model, **hints):
         """
-        Attempts to write to titre_wiki models go to db_titre_wiki
+        Les tentatives d'écriture dans les modèles titre_wiki vont à db_titre_wiki
         """
         if model._meta.app_label == 'titre_wiki':
             return 'db_titre_wiki'
@@ -33,26 +30,26 @@ class TitreWikiRouter:
 
     def allow_relation(self, obj1, obj2, **hints):
         """
-        Allow relationships only if obj1._meta.app_label == obj2._meta.app_label
+        Autoriser les relations uniquement si obj1._meta.app_label == obj2._meta.app_label
         """
         app_label_name = 'titre_wiki'
-        #If both models have app_label = 'titre_wiki' allow relation between them
+        #Si les deux modèles ont app_label = 'titre_wiki' autoriser la relation entre eux
         if obj1._meta.app_label == app_label_name and \
         obj2._meta.app_label == app_label_name:
             return True
-        #to next router
+        #au prochain routeur
         elif app_label_name not in [obj1._meta.app_label, obj2._meta.app_label]:
             return None
 
-        #Else - one model has app_label = 'titre_wiki' the other one does not -
-        #Forbid a relationship spanning multiple databases - not supported in Django
+        #Else - un modèle a app_label = 'titre_wiki' l'autre pas -
+        #Forbid une relation couvrant plusieurs bases de données - non pris en charge dans Django
         else:
             return False
 
 
     def allow_migrate(self, db, app_label, model_name=None, **hints):
         """
-        Make sure the titre_wiki app only appears in the 'db_titre_wiki'
+        Assurez-vous que l'application titre_wiki n'apparaît que dans le 'db_titre_wiki'
         """
 
         if db == 'db_titre_wiki':
