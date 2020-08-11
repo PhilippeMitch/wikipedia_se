@@ -20,9 +20,9 @@ class UpdateArticle(object):
             article_.save(using='db_article_wiki')
         except wikipedia.exceptions.DisambiguationError as e:
             for options in e.options:
-			    error += options.decode("utf-8","ignore")+'\n'
+                error += options.decode("utf-8","ignore")+'\n'
         except wikipedia.exceptions.PageError:
-            error = "No messages could be found with the topic you entered!"
+            error = "Aucun message n'a pu être trouvé avec le sujet que vous avez entré!"
 
     def start_job(self):
         self.add_article(self.iteration_count)
@@ -38,3 +38,21 @@ class UpdateArticle(object):
         if self.iteration_count >= 100:
             timer.cancel()
             
+
+
+# @app.task
+# def add_aticle_to_db():
+#     for user in get_user_model().objects.all():
+#         posts = Post.objects.filter(author=user)
+#         if not posts:
+#             continue
+ 
+#         template = Template(REPORT_TEMPLATE)
+ 
+#         send_mail(
+#             'Your QuickPublisher Activity',
+#             template.render(context=Context({'posts': posts})),
+#             'from@quickpublisher.dev',
+#             [user.email],
+#             fail_silently=False,
+#         )

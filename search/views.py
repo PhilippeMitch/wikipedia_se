@@ -21,12 +21,6 @@ def search(request):
 
 def home(request):
     liste_titre = TitreWiki.objects.all()
-
-    # print(len(liste_titre.values('title')))
-    # t = perpetualTimer(1, printer)
-    # t.start()
-    # app.mainloop()
-
     context = {'liste_titre': liste_titre}
     return render(request, 'home/home.html', context)
 
